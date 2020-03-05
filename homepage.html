@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>eSari-Sari Store - Products</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="sari.png">
+	<script  src="script.js" type="text/javascript"></script>
+</head>
+
+<body class="page">
+
+<div class="container">
+
+<header>
+
+		<div class="header">
+		<a style="padding-top: 50px;" href="homepage.html?user=sampleusername&pass=123456789&submittion=Sign+In"><img src="logo.png" class="logo"></a>
+			
+			<nav>
+
+				<ul>
+					<li>
+						<a href="aboutus.html">About Us</a>
+					</li>
+
+					<li>
+						<a href="index.html">Log out</a>
+					</li>
+				</ul>
+			</nav>
+
+	</div>
+</header>
+
+
+
+
+<div class="main">
+
+<div class="leftside">
+	<!-- <div class="label">Categories</div> 
+
+			<a class="cat" href="chips.html"><div class="products">Chips</div></a>
+			<a class="cat" href="powdered.html"><div class="products">Powdered Drinks</div></a>
+			<a class="cat" href="noodles.html"><div class="products">Noodles</div></a>
+			<a class="cat" href="snacks.html"><div class="products">Snacks</div></a>
+			<a class="cat" href="beverages.html"><div class="products">Beverages</div></a>-->
+			<div class="cart" style="text-align:center;font-size: 20px;font-weight: bold;">YOUR CART:</div>
+			<div class="cart" id="hello">Total Price = ₱0<br>Number of order/s: 0<br>Shipping fee: ₱20</div>
+			<div class="cart">
+				<button class="cart" type="button" onclick="order()">Order now?</button>
+				<button class="cart" type="button" style="float: right;" onclick="reset()">Reset Order</button>
+			</div>
+<p id="yo"></p>
+</div>
+
+
+<!-- PRODUCTS ON THE RIGHT SIDE -->
+<div class="rightside">
+	<!-- LABEL OF THE PRODUCTS -->
+	<div class="label">Products</div>
+	<form name="shopping">
+
+<!-- CHIPS -->
+	<div class="content"><img src="photos/piatos.jpg" class="prod">
+		<p class="addtocart">Piattos 85g: Cheese<br><b>₱35.50</b><br><br>
+			<input type="checkbox" name="piattosb" style="width: 20px;">Add to Cart 
+			<select name="quantity">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</p></div>
+
+	<div class="content"><img src="photos/piatosmol.jpg" class="prod">
+		<p class="addtocart">Piattos 40g: Cheese<br><b>₱15.00</b><br><br>
+			<input type="checkbox" name="piatosmol" style="width:20px;">Add to Cart
+			<select name="quantity1">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/vcut.jpg" class="prod">
+		<p class="addtocart">Vcut 85g: Barbecue<br><b>₱35.50</b><br><br>
+			<input type="checkbox" name="vcutb" style="width:20px;">Add to Cart 
+			<select name="quantity2">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</p></div>
+
+	<div class="content"><img src="photos/vcutsmol.jpg" class="prod">
+		<p class="addtocart">Vcut 25g: Barbecue<br><b>₱14.50</b><br><br>
+			<input type="checkbox" name="vcutsmol" style="width:20px;">Add to Cart
+			<select name="quantity3">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/nova.jpg" class="prod">
+		<p class="addtocart">Nova 40g: Cheddar<br><b>₱15.00</b><br><br>
+			<input type="checkbox" name="nova" style="width:20px;">Add to Cart 
+			<select name="quantity4">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/piatosbbq.jpg" class="prod">
+		<p class="addtocart">Piattos 40g:<br>Roadhouse BBQ<br><b>₱15.00</b><br>
+			<input type="checkbox" name="piatosbbq" style="width:20px;">Add to Cart 
+			<select name="quantity5">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/piatosourb.jpg" class="prod">
+		<p class="addtocart">Piattos 85g:<br>Sour Cream & Onion<br><b>₱35.50</b><br>
+			<input type="checkbox" name="piatosourb" style="width: 20px;">Add to Cart 
+			<select name="quantity12">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</p></div>
+
+	<div class="content"><img src="photos/piatosour.jpg" class="prod">
+		<p class="addtocart">Piattos 40g:<br>Sour Cream & Onion<br><b>₱15.00</b><br>
+			<input type="checkbox" name="piatosour" style="width:20px;">Add to Cart 
+			<select name="quantity6">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+
+
+
+
+
+
+
+
+
+<!-- POWDERED DRINKS -->
+	<div class="content"><img src="photos/energenc.jpg" class="prod">
+		<p class="addtocart">Energen 30g: Chocolate<br><b>₱11.25</b><br><br>
+			<input type="checkbox" name="energenc" style="width:20px;">Add to Cart 
+			<select name="quantity7">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/energenv.jpg" class="prod">
+		<p class="addtocart">Energen 30g: Chocolate<br><b>₱11.25</b><br><br>
+			<input type="checkbox" name="energenv" style="width:20px;">Add to Cart 
+			<select name="quantity8">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/milo.jpg" class="prod">
+		<p class="addtocart">Milo 22g<br><b>₱9.50</b><br><br>
+			<input type="checkbox" name="milo" style="width:20px;">Add to Cart 
+			<select name="quantity9">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/bb.jpg" class="prod">
+		<p class="addtocart">Bear Brand 33g:<br>Swak Pack<br><b>₱13.25</b><br>
+			<input type="checkbox" name="bb" style="width:20px;">Add to Cart 
+			<select name="quantity10">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/bbadult.jpg" class="prod">
+		<p class="addtocart">Bear Brand 33g:<br>Adult Plus<br><b>₱19.00</b><br>
+			<input type="checkbox" name="bbadult" style="width:20px;">Add to Cart 
+			<select name="quantity11">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/btree.jpg" class="prod">
+		<p class="addtocart">Birch Tree 33g:<br>Fortified<br><b>₱9.50</b><br>
+			<input type="checkbox" name="btree" style="width:20px;">Add to Cart 
+			<select name="quantity13">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+
+
+
+
+
+
+
+
+
+<!-- NOODLES -->
+	<div class="content"><img src="photos/kalamansi.jpg" class="prod">
+		<p class="addtocart">Lucky Me!<br>Pancit Canton:Kalamansi<br><b>₱15.50</b><br>
+			<input type="checkbox" name="kalamansi" style="width:20px;">Add to Cart 
+			<select name="quantity14">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/original.jpg" class="prod">
+		<p class="addtocart">Lucky Me!<br>Pancit Canton: Original<br><b>₱15.50</b><br>
+			<input type="checkbox" name="original" style="width:20px;">Add to Cart 
+			<select name="quantity15">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/sweet.jpg" class="prod">
+		<p class="addtocart">Lucky Me! Pancit Canton: <br>Sweet&Spicy<br><b>₱15.50</b><br>
+			<input type="checkbox" name="sweet" style="width:20px;">Add to Cart 
+			<select name="quantity16">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/spicy.jpg" class="prod">
+		<p class="addtocart">Lucky Me! Pancit Canton:<br>Extra Hot Chili<br><b>₱15.50</b><br>
+			<input type="checkbox" name="spicy" style="width:20px;">Add to Cart 
+			<select name="quantity17">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/beef.jpg" class="prod">
+		<p class="addtocart">Lucky Me!: Beef<br><b>₱9.50</b><br><br>
+			<input type="checkbox" name="beef" style="width:20px;">Add to Cart 
+			<select name="quantity18">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/chicken.jpg" class="prod">
+		<p class="addtocart">Lucky Me!: Beef<br><b>₱9.50</b><br><br>
+			<input type="checkbox" name="chicken" style="width:20px;">Add to Cart 
+			<select name="quantity19">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+
+
+
+
+
+
+
+
+
+<!-- SNACKS -->
+	<div class="content"><img src="photos/eggnog.jpg" class="prod">
+		<p class="addtocart">Nissin:<br>Eggnog Cookies 18g<br><b>₱6.25</b><br>
+			<input type="checkbox" name="eggnog" style="width:20px;">Add to Cart 
+			<select name="quantity20">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/stix.jpg" class="prod">
+		<p class="addtocart">Nissin:<br>Bread Stix 20g<b><br>₱6.50</b><br>
+			<input type="checkbox" name="stix" style="width:20px;">Add to Cart 
+			<select name="quantity21">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/fita.jpg" class="prod">
+		<p class="addtocart">Fita Crackers 30g:<br>9 pcs<b><br>₱6.00</b><br>
+			<input type="checkbox" name="fita" style="width:20px;">Add to Cart 
+			<select name="quantity22">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/creamoc.jpg" class="prod">
+		<p class="addtocart">Cream-O 33g:<br>Chocolate<b><br>₱7.50</b><br>
+			<input type="checkbox" name="creamoc" style="width:20px;">Add to Cart 
+			<select name="quantity23">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+	
+	<div class="content"><img src="photos/creamov.jpg" class="prod">
+		<p class="addtocart">Cream-O 33g:<br>Vanilla<b><br>₱7.50</b><br>
+			<input type="checkbox" name="creamov" style="width:20px;">Add to Cart 
+			<select name="quantity24">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+
+
+
+
+
+
+
+
+
+<!-- BEVERAGES -->
+	<div class="content"><img src="photos/coke.jpg" class="prod">
+		<p class="addtocart">Coca-Cola: 1.5L<b><br>₱75.00</b><br><br>
+			<input type="checkbox" name="coke" style="width:20px;">Add to Cart 
+			<select name="quantity25">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/sprite.jpg" class="prod">
+		<p class="addtocart">Sprite: 1.5L<b><br>₱75.00</b><br><br>
+			<input type="checkbox" name="sprite" style="width:20px;">Add to Cart 
+			<select name="quantity26">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/royal.jpg" class="prod">
+		<p class="addtocart">Royal: 1.5L<b><br>₱75.00</b><br><br>
+			<input type="checkbox" name="royal" style="width:20px;">Add to Cart 
+			<select name="quantity27">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/rc.jpg" class="prod">
+		<p class="addtocart">RC: 1.5L<b><br>₱75.50</b><br><br>
+			<input type="checkbox" name="rc" style="width:20px;">Add to Cart 
+			<select name="quantity28">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>
+
+	<div class="content"><img src="photos/pepsi.jpg" class="prod">
+		<p class="addtocart">Pepsi: 1.5L<b><br>₱76.25</b><br><br>
+			<input type="checkbox" name="pepsi" style="width:20px;">Add to Cart 
+			<select name="quantity29">
+				<option>Quantity</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+	</p></div>	
+
+
+	</form>
+</div>
+
+
+
+</div>
+
+</div>
+<footer class="footer">
+
+	<div class="paa">
+
+		<li>Follow us:</li>
+		<li style="padding-top: 5px;">
+			<a href="https://www.facebook.com/" target="_blank"><img src="links/facebook.png" style="height: 30px;"></a>
+			<a href="https://twitter.com/" target="_blank"><img src="links/twitter.png" style="height: 30px;"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="links/instagram.png" style="height: 30px;"></a>
+			<a href="https://aboutme.google.com/u/0/?referer=gplus" target="_blank"><img src="links/googleplus.png" style="height: 30px;"></a></li>
+	</div>
+
+	<div class="contact">
+		<li style="font-size: 15px;">Contact Us:</li>
+		<li>☎ 442-13-71</li>
+		<li>✆ 0910-269-8514</li>
+		<li>✉ esarisari.store@gmail.com</li>
+	</div>
+
+	<div class="paa2">
+		© eSari-Sari Store 2020
+	</div>
+
+</footer>
+
+</body>
+</html>
+<!-- ANG SET UP, PIPILI SILA NG CATEGORY -->
