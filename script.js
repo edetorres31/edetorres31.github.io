@@ -1065,7 +1065,7 @@ function order()
 		name=prompt("Please Enter your full name:");
 		}while(name == 0);
 
-		question=confirm("Do you wante to make this order?");
+		question=confirm("Do you want to make this order?");
 		if(question)
 		{
 		alert("Your order has been made!\n\nFull name: "+(name)+"\nAddress: "+(address)+"\nContact number: "+(number)+"\nPrice: ₱"+(addtocart()+parseInt(20)));
